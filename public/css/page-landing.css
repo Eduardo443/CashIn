@@ -1,0 +1,168 @@
+#page-landing{
+    background: linear-gradient(329.54deg, #263238 0%, #111e27 100%);
+
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    /* align-items: center; */
+}
+
+#container{
+    margin: auto;
+    width: min(95%, 120rem);
+    height: min(150%, 100rem);
+}
+
+.tittle, h1, .visit p{
+    height: 16vh;
+}
+
+/* Botoes repository e calc */
+
+/*.visit{
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    cursor: pointer;
+
+    transition: background .2s;
+}
+
+
+
+.visit #calc{
+    width: 8rem;
+    height: 8rem;
+    background:#11B003;
+    border-radius: 3rem;
+}
+.visit #calc:hover{
+    background: #0b7202 ;
+}
+
+
+
+.visit #github{
+    width: 25rem;
+    height: 10rem;
+    background:#4E30C7;
+    border-radius: 3rem;
+    align-content: space-between;
+}
+
+.visit p{
+    text-decoration: none;
+}
+.visit #github img{
+    height: 80%;
+    width: 20%;
+}
+.visit #github:hover{
+    background: #351f8b ;
+}*/
+
+
+
+/* desctop version */
+
+@media(min-width: 760px){
+    #container{
+        padding: 5rem 2rem;
+        /* shorthand background: image repeat position/size */
+        background: url(../images/Graph.svg) no-repeat 80% / clamp(30rem, 54vw, 56rem);
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .tittle, h1, .visit p{
+        height: initial;
+        text-align: initial;
+    }
+
+    .tittle{
+        font-size: 10rem;
+        line-height: 1.5;
+    }
+
+    .types{
+        /* css é uma merda!!! */
+    }
+
+    main h1{
+        font-weight: lighter;
+        line-height: 1;
+
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);
+        height: center;
+    }
+
+
+    /*Botoes*/
+
+    .visit{
+    
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    
+        margin: auto;
+    
+        cursor: pointer;
+    
+        transition: background .2s;
+    }
+    
+    /* botão calcular */
+    
+    .visit #calc{
+        width: 8rem;
+        height: 8rem;
+
+        background:#11B003;
+
+        border-radius: 3rem;
+    }
+    .visit #calc:hover{
+        background: #0b7202;
+        transition: .3s;
+    }
+    
+    /* botção repositorio github */
+    
+    .visit #github{
+        width: 25rem;
+        height: 10rem;
+        border: 5rem;
+
+        text-align: center;
+
+        background:#4E30C7;
+        text-decoration: none;
+
+        border-radius: 3rem;
+
+    }
+    
+    .visit #github img{
+        height: 90%;
+        width: 50%;
+    }
+    .visit #github:hover{
+        background: #351f8b;
+        transition: .3s;
+    }
+}
