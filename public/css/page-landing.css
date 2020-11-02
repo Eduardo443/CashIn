@@ -95,9 +95,7 @@
         line-height: 1.5;
     }
 
-    .types{
-        /* css é uma merda!!! */
-    }
+    /* .types{} */
 
     main h1{
         font-weight: lighter;
@@ -107,62 +105,5 @@
 
         width: min(300px, 80%);
         height: center;
-    }
-
-
-    /*Botoes*/
-
-    .visit{
-    
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
-    
-        margin: auto;
-    
-        cursor: pointer;
-    
-        transition: background .2s;
-    }
-    
-    /* botão calcular */
-    
-    .visit #calc{
-        width: 8rem;
-        height: 8rem;
-
-        background:#11B003;
-
-        border-radius: 3rem;
-    }
-    .visit #calc:hover{
-        background: #0b7202;
-        transition: .3s;
-    }
-    
-    /* botção repositorio github */
-    
-    .visit #github{
-        width: 25rem;
-        height: 10rem;
-        border: 5rem;
-
-        text-align: center;
-
-        background:#4E30C7;
-        text-decoration: none;
-
-        border-radius: 3rem;
-
-    }
-    
-    .visit #github img{
-        height: 90%;
-        width: 50%;
-    }
-    .visit #github:hover{
-        background: #351f8b;
-        transition: .3s;
     }
 }

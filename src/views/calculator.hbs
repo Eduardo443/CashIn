@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - CashIn</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page-calculator.css">
+    <link rel="stylesheet" href="css/button.css">
+    
+</head>
+
+    <header>
+        <a href="/" id="miniTittle">CashIn</a>
+        <a id='github'href="https://github.com/eduardo443/CashIn" target=blank title="Repository">
+            <img src="/images/github-white.svg" alt="Ir para o Repositorio"></a>
+    </header>  
+
+    <body>
+
+        <form action="calculate" method="post" onsubmit="">
+            <fieldset>
+                <div class="input-block">
+                    <label for="inicial">Qual valor inicial aplicado?</label>
+                    <input id='inicial' type='number' min="0" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="monthly">Qual o valor mensal?</label>
+                    <input id='monthly' type='number' min="0" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="time">Por quanto tempo?</label>
+                    <input id='time' type='number' min="0" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de investimento</legend>
+                    <select id='typeOfInv' required>
+                        <option value="">Nenhum item selcionado</option>
+                        <option value="tSelic">Tesouro selic</option>
+                        <option value="TFixa">Taxa fixa</option>
+                        <option value="poupanca">Poupança</option>
+                    </select>
+                    <div id='rate'>
+                        <label for="rate">Taxa de juros:</label>
+                    </div>
+                    <button class='primary-button'>Calcular</button>
+            </fieldset>
+        </form> 
+
+        <dir id='resolts'>
+
+            <div class="liquidResolt">
+                <p>Quanto você aplicou</p>
+                <strong>R$: $$$,$$</strong>
+            </div>
+
+            <div class="liquidResolt">
+                <p>Quanto os juros trabalharam</p>
+                <strong>R$: $$$,$$</strong>
+            </div>
+
+            <div id='finalResolt'>
+                <h1>O resultado final</h1>
+                <p>Soma do valor aplicado por você mais o trabalho dos juros</p>
+                <strong>R$: $$$,$$</strong>
+            </div>
+
+        </dir>    
+
+    </body>
+</html>

@@ -1,0 +1,127 @@
+header{
+    display: flex;
+    background-color: #07131A;
+
+    height: 60px;
+    width: 100%;
+
+    /* position: fixed; */
+}
+
+#miniTittle{
+
+    text-decoration: none;
+
+    font-size: 40px;
+    font-weight: 700;
+    color:#E2F1F8;
+    
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+#github img{
+    height: 80%;
+
+    margin: .5rem;
+}
+
+body{
+    background-color: #263238;
+}
+
+/* formulario - codigo reaproveitado na NLW 3 */
+
+form, .liquidResolt, #finalResolt{
+    width: 700px;
+    margin: 6.4rem auto;
+    background: #4F5B62;
+    border: 1px solid #394247;
+    
+    border-radius: 2rem;
+    
+    overflow: hidden;
+
+    padding: 8rem;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset + fieldset{
+    margin-top: 8rem;
+}
+
+fieldset + fieldset:focus{
+    border: 2px solid blue;
+}
+
+fieldset legend{
+    width: 100%;
+
+    font-size: 3.2rem;
+    line-height: 1.5;
+
+    color: #E2F1F8;
+    font-weight: 700;
+
+    border-bottom: 1px solid #d3e2e5;
+    /* margin-bottom: 4rem; */
+    padding-bottom: 2.4rem;
+}
+
+.input-block + .input-block,
+ #typeOfInv, 
+ #rate,
+ #calcButton{
+    margin-top: 2.4rem;
+}
+
+.input-block label{
+    color: #E2F1F8;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+
+.input-block input:valid{
+    background: 1px solid #a1e9c5;
+}
+
+.input-block input, #typeOfInv{
+    width: 100%;
+
+    background: #c9d8df;
+    border: 1px solid #d3e2e5;
+    border-radius: 2rem;
+
+    color: #5c8599;
+    outline: none;
+}
+
+.input-block input:focus{
+    border: 2px solid blue;
+}
+
+.input-block input, #typeOfInv{
+    height: 6.4rem;
+    padding: 0 1.6rem;
+}
+
+#rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#resolts{
+    text-align: center;
+}
+
+.liquidResolt, p, .finalResoSlt{
+    margin-top: 1rem;
+}
+

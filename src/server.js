@@ -10,7 +10,7 @@ server
 .use(express.static('public'))
 
 .set('views', path.join(__dirname + '/views'))
-.set('view engine', 'pug')
+.set('view engine', 'hbs')
 
 .get('/', pages.index)
 .get('/calculator', pages.calculator)
